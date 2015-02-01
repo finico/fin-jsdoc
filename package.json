@@ -1,0 +1,29 @@
+{
+  "name": "fin-jsdoc",
+  "private": true,
+  "version": "0.0.1",
+  "description": "template for JSDoc 3",
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-shell": "^0.2.11",
+    "jsdoc": "^3.3.0-beta1"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/finico/fin-jsdoc.git"
+  },
+  "keywords": [
+    "jsdoc",
+    "jsdoc3",
+    "template"
+  ],
+  "author": "finico",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
