@@ -1,12 +1,14 @@
 (function() {
+    var linenums = config.linenums;
+
+    if (!linenums) return;
+
     var counter = 0;
     var numbered;
-    var source = document.getElementsByClassName('prettyprint source');
+    var source = document.getElementsByClassName('prettyprint source linenums');
 
     if (source && source[0]) {
-        var linenums = config.linenums;
-
-        if (linenums) {
+        if (linenums && source[0].tagName.toLocaleLowerCase() === 'ol') {
             source = source[0].getElementsByTagName('ol')[0];
 
             numbered = Array.prototype.slice.apply(source.children);

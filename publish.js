@@ -496,12 +496,11 @@ exports.publish = function(taffyData, opts, tutorials) {
             title: title,
             header: tutorial.title,
             content: tutorial.parse(),
-            children: tutorial.children
+            children: tutorial.children,
+            filename: filename
         };
-        
         var tutorialPath = path.join(outdir, filename),
             html = view.render('tutorial.tmpl', tutorialData);
-        
         // yes, you can use {@link} in tutorials too!
         html = helper.resolveLinks(html); // turn {@link foo} into <a href="foodoc.html">foo</a>
         
